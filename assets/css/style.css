@@ -1,4 +1,55 @@
 * {
     /* test if css is working */
-    color:aqua
+    /* color:aqua */
 }
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: black;
+    color: #ffffff;
+}
+
+header h1 {
+    justify-content: flex-start;
+    font-size: 48px;
+    background-color: rgb(20, 143, 143);
+    /* changed padding to not use px pleeeease   
+    probably flex  streach*/
+    padding-left: 100px
+}
+
+
+header nav {
+    justify-content: flex-end;
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+div {
+    display: flex;
+    border-right: 10px;
+}
+
+div h3 {
+    /* flex-direction: row; */
+    
+    border-right: solid black;
+
+}
+
