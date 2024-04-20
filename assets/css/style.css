@@ -153,7 +153,7 @@ main div div span > p {
 }
 
 
-.contactMe ul {
+.contactMe ul  {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
