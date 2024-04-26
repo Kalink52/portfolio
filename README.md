@@ -3,7 +3,7 @@
 
 ## Usage
 [kalink52.github.io/portfolio/](https://kalink52.github.io/portfolio/)
-![alt text](assets\pictures\HTMLCSS.png)
+![alt text](./assets/pictures/HTMLCSS.png)
 
 ## Contributing
 
