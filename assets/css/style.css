@@ -2,6 +2,8 @@
     /* test if css is working */
     /* color:aqua */
     margin: 0;
+    
+    padding: 0;
 }
 :root{
     --pictureBorder: rgb(164, 212, 228);
@@ -21,22 +23,14 @@ header {
 }
 
 header h1 {
-    display: flex;
-    justify-content: flex-start;
     font-size: 48px;
     background-color: rgb(20, 143, 143);
-    /* changed padding to not use px pleeeease   
-    probably flex  streach*/
     padding-left: 100px;
-
-
     margin: 15px -0px;
 }
 
 
 header nav {
-    display: flex;
-    justify-content: flex-end;
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -56,23 +50,16 @@ header nav ul li {
 
 figure{
     position: relative;
-    text-align: center;
 }
 
 figure img {
-    display: inline;
     max-height: 300px;
     width: 100%;
-    /* margin-bottom: 25px; */
     object-fit: cover;
-    background-size: cover;
-    background-position: center;
+
     
 }
 figure h3 {
-    /* z-index: 1; */
-    /* display: flex;
-    justify-content: end; */
     position: absolute;
     right: 30px;
     bottom: 20px;
@@ -82,27 +69,24 @@ figure h3 {
 
 }
 
+.test{
+background;
+}
 
 main {
-    display: flex;
     
 }
 
 
-main div div {
+main section {
     display: flex;
     padding: 10px;
 
 }
 
-main div div > h3 {
-    display:flex;
-    justify-content: end;
-
-    /* align-items: center; */
-    
+main section h3 {
     width: 20%;
-
+    text-align: right;
     margin-right: 10px;
     font-size: 200%;
     border-right: 3px solid;
@@ -113,47 +97,75 @@ main div div > h3 {
 
 }
 
-main div div > span {
+main section > span {
     width: 80%;
+    height: fit-content;
 
 }
-main div div span > p {
+main section span > p {
     width: 80%;
-    padding-left: 10px;
-    margin-left: 10px;
     text-align: left;
     color: var(--textColor);
 }
 
 .picture {
-    display: flex;
-    flex-wrap: wrap;
+    position: relative;
 }
 
 .picture img {
-    /* padding: 10px; 
-    padding and margin are not the same thing!!!!!*/
     border: 4px solid var(--pictureBorder);
-    margin: 10px;
+    opacity: 60%;
+}
+.picture img:hover {
+    opacity: 100%;
+}
+
+.picture h2 {
+    position: absolute;
+    font-size: 2.5vw;
+}
+
+.picture h2, .picture img {
+    background: var(--pictureBorder);
+    font-weight:bold;
 }
 
 .bigPicture {
-    width: calc(80% + 20px);
-    max-height: 250px;
+    width: calc(80%);
+    aspect-ratio: 16 / 4;
     object-fit: cover;
     text-align: center;
-
 }
 
-.smallPicture{
+.smallPictureL,.smallPictureR {
+    aspect-ratio: 16 / 6;
     object-fit: cover;
-    max-width: 40%;
+    width: 37.5%;
+    margin-top: 2.5%;
+}
 
+.smallPictureL{
+    margin-right: calc(2.5% - 6px);
+    margin-left: 0;
+}
 
+.smallPictureR{
+    margin-left: calc(2.5% - 6px);
+    margin-right: 0;
+}
+
+.leftCap {
+    bottom: 25px;
+    left: 4px;
+}
+.rightCap {
+    bottom: 25px;
+    left: calc(42.5% + 4px );
 }
 
 
-.contactMe ul  {
+.contactMe span ul  {
+    padding: 0;
     display: flex;
     justify-content: space-between;
     list-style-type: none;
